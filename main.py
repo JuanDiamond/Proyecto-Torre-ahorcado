@@ -1,2 +1,4 @@
-print("hola")
-from palabras import palabras
+from juego import Ahorcado
+juego = Ahorcado()
+juego.cargar_palabras("series", 1)
+print(juego.palabra)
