@@ -1,4 +1,23 @@
 from juego import Ahorcado
-juego = Ahorcado()
-juego.cargar_palabras("series", 1)
-print(juego.palabra) #prueba de que si sirva la función y la muestre en consola
+from MenuSeleccionTema import SelectorTema
+
+seleccion = 0
+
+if seleccion == 0:
+
+    print("I---- bienvenido a la torre del ahorcado ----I")
+    print(" ")
+    seleccion = int(input("            escriba 1 para empezar: "))
+    print(" ")
+
+if seleccion == 1:
+
+    selector = SelectorTema()
+    categoria = selector.SeleccionTematicas()
+
+    juego = Ahorcado()
+    juego.cargar_palabras(categoria, 1)
+    print(juego.palabra) #prueba de que si sirva la función y la muestre en consola
+
+
+
