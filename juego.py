@@ -13,7 +13,7 @@ class Ahorcado:
         self.categoria = categoria  
         self.nivel = nivel
     
-        ruta = f"Proyecto torre ahorcado/palabras/{categoria}/nivel{nivel}.txt"
+        ruta = f"palabras/{categoria}/nivel{nivel}.txt"
     
         with open(ruta, "r", encoding="utf-8") as archivo:
             palabras = archivo.read().splitlines()
